@@ -1,0 +1,10 @@
+# Versions used for the single-GPU experiments (Python 3.9, CUDA 11.8). Newer versions
+# of torch / torchvision are expected to work; the ImageNet experiments ran with torch 2.1.2.
+torch==2.0.0
+torchvision==0.15.0
+numpy==1.23.5
+tqdm==4.67.1
+wandb==0.19.8
+torch-optimizer==0.3.0
+datasets==4.4.1
+scikit-learn==1.2.2

@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "PDT: Predictive Differential Training Guided by Training Dynamics"
+authors:
+  - family-names: Wang
+    given-names: Fanqi
+  - family-names: Tang
+    given-names: Weisheng
+  - family-names: Harris
+    given-names: Landon
+  - family-names: Qi
+    given-names: Hairong
+  - family-names: Wilson
+    given-names: Dan
+  - family-names: Mezić
+    given-names: Igor
+repository-code: "https://github.com/aicip/PDT"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "Predictive Differential Training Guided by Training Dynamics"
+  authors:
+    - family-names: Wang
+      given-names: Fanqi
+    - family-names: Tang
+      given-names: Weisheng
+    - family-names: Harris
+      given-names: Landon
+    - family-names: Qi
+      given-names: Hairong
+    - family-names: Wilson
+      given-names: Dan
+    - family-names: Mezić
+      given-names: Igor
+  collection-title: "International Conference on Learning Representations (ICLR)"
+  year: 2026
+  url: "https://openreview.net/forum?id=zSTgrLkpRi"

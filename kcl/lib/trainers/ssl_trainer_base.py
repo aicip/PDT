@@ -4,11 +4,10 @@ import random
 
 import numpy as np
 import torch
-from tensorboardX import SummaryWriter
 from tqdm import tqdm
 
 import wandb
-from kcl.utils.misc import (full_seed, pretty_size, query_gpu_memory)
+from kcl.utils.misc import full_seed, pretty_size
 from kcl.utils.weight_tools import flat_params_as_torch
 
 from torch.profiler import profile, record_function, ProfilerActivity
@@ -68,6 +67,8 @@ class SSLTrainerBase:
         self.args = args
         
         if self.use_tb:
+            from tensorboardX import SummaryWriter  # optional dependency
+
             self.tb = SummaryWriter(log_dir)
         else:
             self.tb = None

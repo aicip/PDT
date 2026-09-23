@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kcl"
+version = "1.0.0"
+description = "Predictive Differential Training (PDT): Koopman-based acceleration of neural network training"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Fanqi Wang" },
+  { name = "Weisheng Tang" },
+  { name = "Landon Harris" },
+  { name = "Hairong Qi" },
+  { name = "Dan Wilson" },
+  { name = "Igor Mezić" },
+]
+dependencies = [
+  "torch>=2.0",
+  "torchvision>=0.15",
+  "numpy<2",  # torch 2.0 / 2.1 wheels are built against NumPy 1.x
+  "tqdm",
+  "wandb",
+  "torch-optimizer",
+  "datasets",
+  "scikit-learn",
+]
+
+[project.urls]
+Paper = "https://openreview.net/forum?id=zSTgrLkpRi"
+Repository = "https://github.com/aicip/PDT"
+
+[tool.setuptools.packages.find]
+include = ["kcl*"]

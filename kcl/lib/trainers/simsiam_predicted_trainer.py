@@ -292,8 +292,8 @@ class SimSiamPredictedTrainer(SSLTrainerBase):
 
             print(f"SSL PDT mask ratio: {mask_ratio.item():.4f}")
 
-            # Save mask for analysis
-            if hasattr(self, 'log_dir'):
+            # Save mask for analysis (opt-in)
+            if getattr(self.args, 'save_masks', False):
                 mask_folder = os.path.join(self.log_dir, "ssl_masks")
                 os.makedirs(mask_folder, exist_ok=True)
                 mask_file = os.path.join(mask_folder, f"ssl_mask_epoch_{self.cur_epoch:04d}.pt")
